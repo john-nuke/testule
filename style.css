@@ -107,7 +107,7 @@ form.container {
 }
 
 /* Media Query for Mobile */
-@media (max-width: 426px) {
+@media (max-width: 425px) {
   .container {
     flex-direction: column;
     margin: 1rem auto 0;
