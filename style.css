@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 5rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 50px;
 }
 
 h2 {
@@ -13,9 +13,9 @@ h2 {
   justify-content: center;
   text-align: center;
   border-radius: 20px;
-  padding: 60px 60px;
-  width: 300px;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
+  width: 250px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -24,23 +24,26 @@ h1 {
   align-items: center;
   background-color: rgb(170, 227, 227);
   border-radius: 20px;
-  padding: 40px;
+  padding: 20px;
   width: 100%;
-  max-width: 500px;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
-  margin: 2rem auto;
+  max-width: 400px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  margin: 1.5rem auto;
   word-wrap: break-word;
+  font-size: 1.5rem;
 }
 
 body {
   background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .gallery-text {
@@ -50,12 +53,12 @@ body {
 }
 
 .gallery img {
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .message-container {
     display: flex;
     flex-direction: column;
@@ -69,28 +72,30 @@ body {
   .container {
     display: flex;
     flex-direction: column;
+    margin: 1rem auto 0 auto;
   }
 
   h1 {
-    padding: 40px;
-    font-size: 1.5rem;
+    padding: 20px;
+    font-size: 1.2rem;
   }
-}
 
-@media (min-width: 426px) {
+  h2 {
+    padding: 20px 20px;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .gallery img {
+    max-width: 120px;
+  }
+
   .upper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-
-  .message-container {
     display: flex;
     flex-direction: column;
   }
 
-  .submit-container {
-    display: flex;
-    justify-content: center;
+  .upper > div {
+    width: 100%;
   }
 }
