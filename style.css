@@ -53,8 +53,9 @@ h2 {
 }
 
 .gallery img {
-  max-width: 150px;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
@@ -106,7 +107,7 @@ form.container {
 }
 
 /* Media Query for Mobile */
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .container {
     flex-direction: column;
     margin: 1rem auto 0;
@@ -125,7 +126,8 @@ form.container {
   }
 
   .gallery img {
-    max-width: 120px;
+    width: 150px;
+    height: 150px;
   }
 
   .upper {
