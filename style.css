@@ -25,12 +25,12 @@ h1 {
   background-color: rgb(170, 227, 227);
   border-radius: 20px;
   padding: 20px;
-  width: 100%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 350px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
   margin: 1.5rem auto;
   word-wrap: break-word;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 body {
@@ -73,11 +73,14 @@ body {
     display: flex;
     flex-direction: column;
     margin: 1rem auto 0 auto;
+    align-items: center;
   }
 
   h1 {
     padding: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    width: 90%;
+    max-width: 300px;
   }
 
   h2 {
@@ -93,6 +96,8 @@ body {
   .upper {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    max-width: 400px;
   }
 
   .upper > div {
